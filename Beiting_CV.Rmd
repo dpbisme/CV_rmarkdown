@@ -1,0 +1,197 @@
+---
+name: Daniel P. Beiting
+position: "Assistant Professor of Pathobiology"
+address: "University of Pennsylvania, School of Veterinary Medicine"
+phone: +1 215.898.9247
+www: hostmicrobe.com
+email: "beiting@upenn.edu"
+twitter: hostmicrobe
+github: dpbisme
+date: "`r format(Sys.time(), '%B %Y')`"
+headcolor: 414141
+output: vitae::awesomecv
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+```
+
+
+# Education and training
+
+```{r degrees, results='asis'}
+library(tibble)
+tribble(
+  ~ degree, ~ uni, ~ loc, ~ dates, #~ details,
+  "B.S. in Exercise Science", "Appalachian State University", "Boone, NC", "1995 - 1999",
+  "Ph.D. in Immunology", "Cornell University", "Ithaca, NY", "2001 - 2006",
+  "Postdoctoral fellowship", "University of Pennsylvania", "Philadelphia, PA", "2006-2012"
+) %>% 
+  detailed_entries(degree, dates, uni, loc)
+```
+
+
+# Awards & Achievements
+
+```{r}
+tribble(
+  ~ award, ~ year,
+  "Trainee Award - The 11th International Conference on Trichinellosis", "2004",
+  "Scientific Excellence in Molecular, Cellular and Immunoparasitology - American Society of Tropical Medicine and Hygiene (ASTMH)", "2006",
+  "Guava Prize for best poster presentation - 9th International Congress on Toxoplasmosis", "2007",
+  "Outstanding scientific presentation award - Burroughs Wellcome Fund-ASTMH", "2012",
+  "Mack Technology Fellow - Wharton Business School", "2016"
+) %>%
+  brief_entries(award, year)
+```
+
+# Professional service and memberships
+
+```{r}
+tribble(
+  ~ role, ~ year,
+  "Associate Editor - Microbiome", "current",
+  "Associate Editor - Animal Microbiome", "current",
+  "Member - American Society for Microbiology", "current",
+  "Ad hoc/invited reviewer - Cellular Microbiology, Gut Microbes, Infection and Immunity, MBio, Veterinary Dermatology, Journal of Dental Research, Scientific Reports", "past"
+) %>%
+  brief_entries(role, year)
+```
+
+
+# Press and public engagement
+
+* *Round-table discussion on public health.*  Philadelphia Science Festival.  Philadelphia, PA.  April 2014. 
+
+* *[\textcolor{red}{NBC10 Issue Discussion on Infectious Disease}](https://vimeo.com/109848440)* 54,000 viewers, 7 minutes on air. 
+
+* *[\textcolor{red}{PennVet One-health focus video}](https://vimeo.com/127722934)* 
+
+* *Fecal Microbiota Transplants: (re)discovering the power of poo!*  Philadelphia Science Festival; ‘Gross’ anatomy series.  Philadelphia, PA.  April 2015.
+
+* *[\textcolor{red}{Tedx talk on the Microbiome}](https://www.youtube.com/watch?v=ujA679RgKbw).* The Peddie School, Heightstown, NJ. April 2016. 
+
+* *Fecal Microbiota Transplants: (re)discovering the power of poo!*  Philadelphia Science Festival; ‘Gross’ anatomy series.  Philadelphia, PA.  April 2016. 
+
+
+# Workshops
+
+* *1st West African Regional Workshop on the Cell Biology of Protozoan Pathogens.*   Co-organizer and Instructor - Accra, Ghanam, July 13-24th, 2009.  
+
+* *Bioinformatic analysis of pathogen gene expression.*  Co-organizer. 13th Annual Conference on Toxoplasmosis.  Gettysburg, PA, June 2015. 
+
+* *Cloud computing for metagenomics.*  Co-organizer. 4th Annual UPenn Microbiome Symposium, Philadelphia, PA; Nov, 2017
+
+* *Bioinformatics for Eukaryotic Pathogens.*  Co-organizer. Biology of Parasitism course. Woods Hole, MA; July 14-15, 2018
+
+* *Big Data Genomics - A Practical Workshop on Sequence Analysis in Parasitology.*  Instructor. Parasitology Pre-meeting Course for the 67th ASTMH Annual meeting. New Orleans, LA; Oct 28th, 2018
+
+* *Cloud computing for metagenomics.*  Co-organizer. 5th Annual UPenn Microbiome Symposium, Philadelphia, PA; Nov, 2018
+
+* *Bioinformatics for Eukaryotic Pathogens.*  Co-organizer. Biology of Parasitism course. Woods Hole, MA; July 20-21, 2019
+
+
+# Teaching
+
+* *Transcriptomics using the R programming language* (32 hrs teaching)
+* **CAMB 605** - *First Year Seminar*
+* **CAMB 542** - *Topics in Molecular Medicine* (journal club)
+* **CAMB 696** - *Contemporary Topics in Parasitology Research* (2-4 lecture hours + journal club)
+* **VPTH 605** - *The Microbiome in Animal Health and Disease* (2 lecture hours)
+* **IMUN 506** - *Immune Mechanisms* (1 lecture)
+* **IMUN 507** - *Immune Mechanisms - Advanced Topics* (2 lecture hours)
+* **BIOL 406** - *Molecular Mechanisms of Infectious Disease* (no longer teaching)
+
+# Consulting
+
+* **Scientific Advisor** - P5 Health Ventures.  2016-2018
+* **Scientific Advisor** - Astarte Medical. 2018 - current
+
+
+# Publications (peer-reviewed)
+
+## A complete list of peer-reviewed publications can be viewed **[here](https://scholar.google.com/citations?user=Ii2Dh48AAAAJ&hl=en)** on Google Scholar
+
+```{r publications}
+library(scholar)
+scholar::get_publications("Ii2Dh48AAAAJ") %>%
+  arrange(desc(year)) %>%
+  detailed_entries(
+    what = author,
+    when = year,
+    with = title,
+    where = journal
+  )
+```
+
+# Invited and selected talks
+
+* *IL-10 modulates the inflammatory response to Trichinella spiralis*. 2nd Immunology Meeting for Graduate students (Northeast region), Cornell University, College of Veterinary Medicine, Ithaca, New York, USA, September 2002.
+
+* *IL-10 limits local and regional inflammation during muscle infection with Trichinella spiralis.*  Biological and Biomedical Sciences Program Symposium, Cornell University, College of Veterinary Medicine, Ithaca, New York, USA, September 2003.
+
+* *IL-10 controls inflammation at the surface of the diaphragm and in the pleural cavity during muscle infection with Trichinella spiralis.*  6th Annual Upstate New York Immunology Conference.  Bolton Landing, NY, USA, November 2003.
+
+* *Syndecan-1, a heparan-sulfate proteoglycan, is synthesized during muscle infection with the parasitic nematode Trichinella spiralis.*  The 11th International conference on Trichinellosis, San Diego University, San Diego, CA, August 2004.
+
+* *Coordinated control of immunity to muscle stage Trichinella spiralis by IL-10, regulatory T cells and TGF-β.*  10th Annual Woods Hole Immunoparasitology Conference.  Woods Hole, MA, USA, May 2006
+
+* *Coordinated control of immunity to muscle stage Trichinella spiralis by IL-10, regulatory T cells and TGF-β.*  The 55th Annual Meeting of the American Society of Tropical Medicine and Hygiene (ASTMH), Atlanta, GA, November 2006. 
+
+* *A genome-scale screen in Toxoplasma gondii infected cells identifies positive regulators of STAT1-mediated transcription.*  20th Annual Molecular Parasitology Meeting, Woods Hole, MA, Sept 2009.
+
+* *A genomic screen in Toxoplasma infected cells identifies nuclear hormone receptors as positive regulators of STAT1 signal transduction.* The 11th International Congress on Toxoplasmosis, Ottawa, Ontario, June 2011
+
+* *Pathogens as perturbagens: exploiting genomic technologies to identify novel regulators of host immunity.*  University of Virginia. Center for Public Health Genomics.  Genome Sciences Seminar Series. Oct 2011.
+
+* *Pathogens as perturbagens: exploiting genomic technologies to identify novel regulators of host immunity.*  University of South Florida.  Global Health Seminar Series. April 2012.
+
+* *TLR3/TRIF-dependent innate recognition of a protozoan parasite.* 21st Annual Molecular Parasitology Meeting, Woods Hole, MA, Sept 2012 (awarded received for outstanding presentation).
+
+* *TLR3-dependent recognition of RNA from a protozoan parasite.* The 61st Annual Meeting of the American Society of Tropical Medicine and Hygiene (ASTMH), Atlanta, GA, Nov 2012.
+
+* *Genomic approaches to studying host-pathogen interactions.*  University of Pennsylvania, Gastroenterology Seminar Series. Oct 2013.
+
+* *Transcriptomic profiling of the human Leishmania braziliensis skin lesion.* Annual Tropical Medicine Research Center (TMRC) meeting.  Natal, Bahia, Brazil.  Feb, 2014.
+
+* *Microbial Genomics in Veterinary Medicine.* Departmental Seminar Series for PennVet Clinical Studies Philadelphia (CSP).  Philadelphia, PA, Feb 18 2016. 
+
+* *From the Skin to the Gut: Leveraging Microbial Genomics to Inform Veterinary Medicine.* Departmental Seminar Series for PennVet Clinical Studies New Bolton Center (NBC).  Philadelphia, PA, May 10 2016. 
+
+* *Transcriptional Programs Associated with Susceptibility to Cutaneous Leishmaniasis.*  Tropical Medicine Research Center (TMRC) Meeting.  Salvadore, Bahia, Brazil.  April 12 2016. 
+
+* *Canine breed genetics as a tool to understand host-microbiome interactions.*  Canine Breeder Excellence Seminar at PennVet.  Philadelphia, PA.  April 30 2016.
+
+* *Monitoring the Microbiome During Treatment and Remission of Canine Chronic Enteritis.* PennVet House Officer Research Day.  Philadelphia, PA. June 23 2016.
+
+* *Transcriptional Programs Associated with Susceptibility to Cutaneous Leishmaniasis.*  Tropical Medicine Research Center (TMRC) Meeting.  Salvador, Bahia, Brazil.  March 6, 2017.
+
+* *Mining relationships between clinical metadata and the host-associated microbiome.*  Malnutrition of Enteric Diseases (MAL-ED) Data Meeting.  Philadelphia, PA, USA.  Aug 28-29 2017. 
+
+* *MicrobiomeDB: a systems biology platform for integrating, mining and analyzing microbiome experiments.*  Institute of Bioinformatics Symposium: Parsing the Microbiome. University of Georgia.  Athens, GA, USA.  September 25, 2017 
+
+* *From the Skin to the Gut: Leveraging Microbial Genomics to Advance Veterinary Medicine.*   118th Penn Annual Conference. Wilmington, DE, USA.  September 27, 2017 
+
+* *Of Mice, Men and Microbes: strategies for interrogating transcriptomes and microbiomes across domains of life.*  Building Interdisciplinary Research Careers in Women’s Health (BIRCWH). Philadelphia, PA, USA.  November 21, 2017 
+
+* *A skin-associated, polymicrobial signature correlates with increased inflammation and treatment failure in cutaneous leishmaniasis.*  Tropical Medicine Research Center (TMRC) Meeting.  Salvadore, Bahia, Brazil.  March 12, 2018.
+
+* *From the Skin to the Gut: Leveraging Microbial Genomics to Advance Canine Health.*  Seminar series. James A. Baker Institute for Animal Health, Cornell University.  Ithaca, NY.  USA.  March 27, 2018 
+
+* *A ‘Makerspace’ Approach to Facilitating Interdisciplinary Microbiome Research.*  PennVet Faculty Retreat.  New Bolton Center.  Kennett Square, PA.  June 8th, 2018.
+
+* *Microbiology and Man’s Best Friend: leveraging canine models of disease to elucidate host-microbe interactions.*  University of Maryland, School of Medicine, Center for Epigenetic Research in Child Health and Brain Development. Baltimore, MD.  July 26th, 2018.
+
+* *Understanding Normalization and Variance in RNAseq Data.*  67th Annual Meeting for the American Society for Tropical Medicine and Health (ASTMH).  Parasitology Pre-meeting Course:  Big Data Genomics – A Practical Workshop on Sequence Analysis in Parasitology.  New Orleans, LA.  Oct 28th, 2018.
+
+* *Exploring Complex Microbial Communities in Enteric Disease Studies.*  67th Annual Meeting for the American Society for Tropical Medicine and Health (ASTMH).  New Orleans, LA.  Oct 28th, 2018.
+
+* *Diet-induced changes in microbial metabolism mediate colonization resistance in enteritis.*  Illumina Accelerator.  Foster City, CA.  Dec 13th, 2018.
+
+
+
+
+
+
+
